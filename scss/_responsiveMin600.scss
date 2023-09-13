@@ -1,0 +1,101 @@
+@media only screen and (min-width: 600px) {
+    /* estilos de la pagina principal*/
+    .grid-container-main-index {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+        ". item4 item4 ."
+        "item1 item1 item3 item3"
+        "item1  item1  item3 item3"
+        "item1  item1  item3 item3";
+    }
+    .imagenHomeColum {
+      @include tamanio (90%, 90%);
+      margin-bottom: 20px;
+    }
+    .item2 {
+      display: none;
+    }
+    .item4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main div h2 {
+      text-decoration: underline 2px black;
+    }
+    .item3 {
+      display: flex;
+      justify-content: center;
+    }
+    /* estilos de la pagina principal*/
+    .boton-filtro {
+      display: none;
+    }
+    main{
+      aside{
+        div h3 {
+          align-items: center;
+          justify-content: center;
+        }
+        div ul li {
+          padding: 20px;
+          text-align: center;
+        }
+      }
+    }  
+    .navegador {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+    .div-navegadorRopa {
+      position: sticky;
+      top: 20px;
+    }
+    body aside div h3 {
+      display: flex;
+      border-bottom: 1px black solid;
+    }
+    .stickytop {
+      display: none;
+    }
+    .container-ropaHombre-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "asideHombre sectionHombre sectionHombre sectionHombre"
+        "asideHombre sectionHombre sectionHombre sectionHombre";
+    }
+    .sectionHombre {
+      grid-area: sectionHombre;
+    }
+    .asideHombre {
+      grid-area: asideHombre;
+      border-top: 1px black solid;
+      border-right: 1px black solid;
+    }
+    #accesorios,
+    #pantalones,
+    #remeras,
+    #short {
+      border-top: 1px black solid;
+      border-bottom: 1px black solid;
+    }
+    /*  Estilos para carro de compras*/
+  
+    /*  Estilos para carro de compras*/
+  
+    /*Formularios*/
+    .container-contacto-grid {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      gap: 20px;
+      grid-template-areas:
+        "cajaContactoTelefono cajaContactoPrivacidad "
+        "cajaContactoForm cajaContactoPrivacidad";
+    }
+    /*Formularios*/
+  }

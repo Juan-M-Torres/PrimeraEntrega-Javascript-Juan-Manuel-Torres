@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "OpensSans";
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+* {
+  font-family: "OpensSans";
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e6e9f6;
+}
+body nav {
+  background: rgb(181, 189, 227);
+  background: linear-gradient(90deg, rgb(181, 189, 227) 7%, rgb(181, 189, 227) 57%, rgb(101, 97, 166) 93%);
+  margin-bottom: 10px;
+}
+body header p {
+  text-align: center;
+  background-color: #faf673;
+  margin-bottom: 0px;
+  border: solid 1px black;
+}
+body aside div ul li a {
+  color: black;
+}
+body aside div button {
+  margin-left: 5px;
+  border-radius: 5px;
+  text-decoration: underline 1px solid black;
+  background-color: #ced3ec;
+}
+body aside div h3 {
+  display: none;
+}
+body section div h3 {
+  text-align: center;
+}
+body div article {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+footer {
+  border-top: 1px black solid;
+}
+footer .imagenFooter {
+  height: 30px;
+  width: 30px;
+  margin: 20px;
+}
+
+.grid-container-main-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  row-gap: 20px;
+  grid-template-areas: "item1" "item2" "item3";
+}
+
+.item1 {
+  grid-area: item1;
+  display: flex;
+  justify-content: center;
+}
+
+.item2 {
+  grid-area: item2;
+  display: flex;
+  justify-content: center;
+}
+
+.item3 {
+  grid-area: item3;
+  display: none;
+}
+
+.item4 {
+  grid-area: item4;
+  display: none;
+}
+
+.imagenHomeColum {
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px gray;
+}
+
+.h2-titulo-Texto {
+  text-align: center;
+}
+
+main aside div {
+  display: flex;
+  justify-content: center;
+}
+main aside .div-navegadorRopa {
+  display: flex;
+  align-items: center;
+}
+
+.navegador {
+  display: none;
+  list-style: none;
+}
+
+.navegador.show {
+  display: flex;
+  flex-direction: column;
+  background: rgb(181, 189, 227);
+  background: linear-gradient(90deg, rgb(181, 189, 227) 7%, rgb(181, 189, 227) 57%, rgb(101, 97, 166) 93%);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.card {
+  background-color: rgb(152, 166, 179);
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px rgb(21, 21, 21);
+}
+
+.card-body {
+  background-color: rgb(152, 166, 179);
+}
+
+.card-img-top {
+  margin-top: 10px;
+}
+
+.imgFlechaTop {
+  height: 40px;
+  width: 40px;
+}
+
+.stickytop {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 1;
+}
+
+.cajaMediosDePagoyEnvio {
+  display: flex;
+}
+
+.imagenMediosDePagoyEnvio {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+
+.formularioContacto {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #8b84f5;
+}
+
+.container-contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-template-areas: "cajaContactoTelefono" "cajaContactoForm" "cajaContactoPrivacidad";
+}
+
+.cajaContactoForm {
+  grid-area: cajaContactoForm;
+}
+
+.cajaContactoPrivacidad {
+  grid-area: cajaContactoPrivacidad;
+}
+
+.cajaContactoTelefono {
+  grid-area: cajaContactoTelefono;
+}
+
+.logoWhatsapp {
+  height: 20px;
+  width: 20px;
+}
+
+.imgYtelefono {
+  display: flex;
+}
+
+.btn {
+  background-color: #516ad7;
+}
+
+@media only screen and (min-width: 600px) {
+  /* estilos de la pagina principal*/
+  .grid-container-main-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: ". item4 item4 ." "item1 item1 item3 item3" "item1  item1  item3 item3" "item1  item1  item3 item3";
+  }
+  .imagenHomeColum {
+    height: 90%;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .item2 {
+    display: none;
+  }
+  .item4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main div h2 {
+    text-decoration: underline 2px black;
+  }
+  .item3 {
+    display: flex;
+    justify-content: center;
+  }
+  /* estilos de la pagina principal*/
+  .boton-filtro {
+    display: none;
+  }
+  main aside div h3 {
+    align-items: center;
+    justify-content: center;
+  }
+  main aside div ul li {
+    padding: 20px;
+    text-align: center;
+  }
+  .navegador {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .div-navegadorRopa {
+    position: sticky;
+    top: 20px;
+  }
+  body aside div h3 {
+    display: flex;
+    border-bottom: 1px black solid;
+  }
+  .stickytop {
+    display: none;
+  }
+  .container-ropaHombre-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "asideHombre sectionHombre sectionHombre sectionHombre" "asideHombre sectionHombre sectionHombre sectionHombre";
+  }
+  .sectionHombre {
+    grid-area: sectionHombre;
+  }
+  .asideHombre {
+    grid-area: asideHombre;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+  }
+  #accesorios,
+  #pantalones,
+  #remeras,
+  #short {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+  }
+  /*  Estilos para carro de compras*/
+  /*  Estilos para carro de compras*/
+  /*Formularios*/
+  .container-contacto-grid {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    grid-template-areas: "cajaContactoTelefono cajaContactoPrivacidad " "cajaContactoForm cajaContactoPrivacidad";
+  }
+  /*Formularios*/
+}
+
+/*# sourceMappingURL=style.css.map */

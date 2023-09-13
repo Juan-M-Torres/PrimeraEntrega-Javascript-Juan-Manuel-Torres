@@ -1,0 +1,35 @@
+.grid-container-main-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    row-gap: 20px;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+  }
+  .item1 {
+    grid-area: item1;
+    display: flex;
+    justify-content: center;
+  }
+  .item2 {
+    grid-area: item2;
+    display: flex;
+    justify-content: center;
+  }
+  .item3 {
+    grid-area: item3;
+    display: none;
+  }
+  .item4 {
+    grid-area: item4;
+    display: none;
+  }
+  
+  .imagenHomeColum {
+    @include tamanio (50%, 50%);
+    border-radius: 10px;
+    box-shadow: 0 0 20px gray;
+  }

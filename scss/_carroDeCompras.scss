@@ -1,0 +1,7 @@
+.cajaMediosDePagoyEnvio {
+    display: flex;
+  }
+  .imagenMediosDePagoyEnvio {
+    @include tamanio (40px, 40px);
+    padding: 5px;
+  }

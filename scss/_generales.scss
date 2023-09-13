@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "OpensSans";
+    src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+  }
+  * {
+    font-family: "OpensSans";
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color:$fondoGeneral;
+    nav {
+      background: $fondoNav;
+      background: linear-gradient(90deg, rgba(181,189,227,1) 7%, rgba(181,189,227,1) 57%, rgba(101,97,166,1) 93%);
+      margin-bottom: 10px;
+    }
+    header p {
+      text-align: center;
+      background-color: $fondoHeader;
+      margin-bottom: 0px;
+      border: solid 1px black;
+    }
+    aside{
+      div ul li a {
+      color: black;
+    }div button {
+      margin-left: 5px;
+      border-radius: 5px;
+      text-decoration: underline 1px solid black;
+      background-color: $fondoButton;
+    } div h3 {
+      display: none;
+    }
+  }
+    section{
+      div h3 {
+        text-align: center;
+      }
+    }div article {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+
+  footer {
+    border-top: 1px black solid;
+    .imagenFooter {
+      @include tamanio (30px, 30px);
+      margin: 20px;
+    }
+  }
